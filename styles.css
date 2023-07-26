@@ -1,0 +1,87 @@
+.table {
+    border: solid 1px rgb(138, 173, 219);
+    width: 80%;
+}
+
+.table,
+th,
+tr,
+td {
+    border: 1px solid ;
+}
+
+.table tr:hover {
+    background-color: #eda489;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.button {
+    background-color:#4c657e;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.button1 {
+    background-color:#f46d6d;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.button2 {
+    background-color:#4b7551;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.button3 {
+    background-color:#993d9a;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.container {
+    max-width: 55%;
+    margin: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
