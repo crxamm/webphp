@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="styles.css"/>
+<center>
 <style>
   body{
     background-color:#e8fd96;
@@ -13,11 +14,12 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   ?>
-  <table class="table">
-    <th> name </th>
-    <th> price </th>
-    <th> stock </th>
-    <th> description </th>
+  <table class="show">
+    <th> Name </th>
+    <th> Price </th>
+    <th> Stock </th>
+    <th> Description </th>
+    <th> Images </th>
     <th> edit </th>
     <th> delete </th>
 
@@ -31,6 +33,7 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo"$row[price]"; ?> </td>
         <td><?php echo"$row[stock]"; ?> </td>
         <td><?php echo"$row[description]"; ?> </td>
+        <td><img src="./image/<?php echo $row[photo] ?>" width="200px" />  </td>
         <td> <?php echo"<a href ='product_edit.php?id=$row[id]'> edit </a>";?> </td>
         <td> <?php echo"<a href ='product_del.php?id=$row[id]'> delete </a>";?> </td>
     </tr>
@@ -45,3 +48,4 @@ if (mysqli_num_rows($result) > 0) {
 }
 mysqli_close($conn);
 ?>
+</center>

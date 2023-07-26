@@ -77,11 +77,25 @@ td {
 .container {
     max-width: 55%;
     margin: auto;
+    
 }
 
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    overflow: auto;
+}
+
+.show {
+    border: solid 1px rgb(138, 173, 219);
+    width: 80%;
+}
+
+.show {
+    border: 1px solid ;
+}
+
+.show tr:hover{
+    background-color: #eda489;
 }

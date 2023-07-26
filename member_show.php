@@ -23,6 +23,7 @@ if (mysqli_num_rows($result) > 0) {
     <th> Email </th>
     <th> Tel. </th>
     <th> Address </th>
+    <th> Images </th>
     <th> Edit </th>
     <th> Delete </th>
 
@@ -36,8 +37,9 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo"$row[email]"; ?> </td>
         <td><?php echo"$row[phone]"; ?> </td>
         <td><?php echo"$row[address]"; ?> </td>
-        <td> <?php echo"<a href ='member_edit.php?id=$row[id]'> edit </a>";?> </td>
-        <td> <?php echo"<a href ='member_del.php?id=$row[id]'> delete </a>";?> </td>
+        <td><img src="./image/<?php echo $row[photo] ?>" width="150px" />  </td>
+        <td><?php echo"<a href ='member_edit.php?id=$row[id]'> edit </a>";?> </td>
+        <td><?php echo"<a href ='member_del.php?id=$row[id]'> delete </a>";?> </td>
     </tr>
     <?php
     }
